@@ -2,6 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+
 # vi mode
 set -o vi
 bind '"kj":vi-movement-mode'
