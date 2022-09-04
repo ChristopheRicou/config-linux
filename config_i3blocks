@@ -1,0 +1,69 @@
+separator_block_width=14
+
+# [Weather]
+# command=~/.i3/IconicWeather.sh "10001"
+# interval=1800
+# color=#e97ac8
+# 
+# 
+# [mail]
+# label= 
+# command=~/.i3/.mail.sh.x
+# interval=100
+# color=#7F00FF 
+
+# [disk-root]
+# label=:
+# command=~/.config/i3blocks/disk/disk  /
+# interval=30
+# color=#1793D1
+
+
+[disk-home]
+label=
+command=~/.config/i3blocks/disk/disk  $HOME
+interval=10
+color=#859900
+
+[ssid]
+label=
+command=echo "$(iw dev wlp3s0 link | grep SSID | cut -d " " -f 2-)"
+color=#d33682
+interval=50
+
+[cpu_usage]
+label=
+command=~/.config/i3blocks/cpu_usage/cpu_usage
+color=#d73882
+interval=1
+
+
+[wireless]
+instance=wlp3s0
+command=~/.config/i3blocks/iface/iface
+color=#00FF00
+interval=50
+
+[memory]
+command=~/.config/i3blocks/memory/memory
+interval=1
+color=#FFE6E6
+
+[bandwidth]
+command=~/.config/i3blocks/bandwidth3/bandwidth3
+interval=1
+color=#b58900
+
+[volume]
+label=
+command=~/.config/i3blocks/volume/volume
+interval=5
+signal=10
+color=#DAEAF1
+
+
+[time]
+label=
+command=date '+%d-%m-%y %H:%M %p'
+interval=30
+color=#50C878
